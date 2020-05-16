@@ -1,0 +1,22 @@
+{
+  "firstName": "Justin Emmanuel",
+  "lastName": "Mercado",
+  "address": "Baguio, Philippines",
+  "title": "Fullstack Web Developer",
+  "email": {
+    "display": "ej@ejmercado.com",
+    "url": "mailto:ej@ejmercado.com"
+  },
+  "linkedin": {
+    "display": "ejmercado",
+    "url": "https://www.linkedin.com/in/ejmercado/"
+  },
+  "github": {
+    "display": "justinemmanuelmercado",
+    "url": "https://github.com/justinemmanuelmercado"
+  },
+  "blog": {
+    "display": "Personal Blog",
+    "url": "https://blog.ejmercado.com"
+  }
+}
