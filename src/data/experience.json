@@ -1,0 +1,54 @@
+[
+  {
+    "company": "TimDev Software & Strategy",
+    "position": "Contract Software Developer",
+    "dates": "August 2018 - Present",
+    "technologyUsed": [
+      "React",
+      "Node",
+      "Express",
+      "Koa",
+      "Typescript",
+      "AWS",
+      "Elastic Stack",
+      "Postgres"
+    ],
+    "description": [
+      "Made multiple fullstack webapps using Typescript, React and Express/Koa",
+      "Integrated the Elastic Stack for collecting logs on users' progress and activity",
+      "Used Lambda for multiple purposes, from small one-of tasks to running an Express REST API using Serverless Framework",
+      "Integrated AWS S3 into a web application for the purpose storing images and using the images in the web app"
+    ]
+  },
+  {
+    "company": "TwistResources",
+    "position": "Software Engineer",
+    "dates": "August 2017 - October 2018",
+    "technologyUsed": [
+      "AngularJS",
+      "Node",
+      "Express",
+      "MySQL"
+    ],
+    "description": [
+      "Part of the main development team for Studylane and GlobalStudyPartners. A web application that helps connect schools with potential students wanting to study in Australia",
+      "Created various parts of the REST API from search results to saving and updating data in the database",
+      "Implemented filtering through lazy-loading to a table previously being loaded all at once and only filtering client-side",
+      "Implemented JWT authentication to a new admin page instead of the previous session based authentication"
+    ]
+  },
+  {
+    "company": "Fullstack IT Solutions",
+    "position": "Fullstack Web Developer",
+    "dates": "January 2016 - March 2017",
+    "technologyUsed": [
+      "PHP",
+      "jQuery",
+      "Wordpress"
+    ],
+    "description": [
+      "Worked on various project frontends using jQuery, Bootstrap and Wordpress",
+      "Worked on the backend of Numo, a web app that connects various lending services and users depending on their answers to a survey. Written in PHP and Slim"
+    ]
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "title": " 💾 Backend",
+    "skills": [
+      "Express",
+      "Koa"
+    ]
+  },
+  {
+    "title": " 🖥️ Frontend",
+    "skills": [
+      "React",
+      "AngularJS",
+      "SASS",
+      "jQuery"
+    ]
+  },
+  {
+    "title": " ⌨️ Programming",
+    "skills": [
+      "Typescript",
+      "JavaScript",
+      "Node"
+    ]
+  },
+  {
+    "title": " 🧱 Misc",
+    "skills": [
+      "Linux",
+      "AWS",
+      "Postgres",
+      "Mysql"
+    ]
+  }
+]

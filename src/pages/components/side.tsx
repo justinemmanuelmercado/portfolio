@@ -1,6 +1,8 @@
 import React from 'react';
 import './side.sass';
-import { FaEnvelope, FaGithub, FaLinkedin, FaGlobeAsia, FaEdit } from 'react-icons/fa';
+import {
+  FaEnvelope, FaGithub, FaLinkedin, FaGlobeAsia, FaEdit,
+} from 'react-icons/fa';
 import { IconType } from 'react-icons/lib/cjs';
 import * as me from '../../data/me.jpg';
 
