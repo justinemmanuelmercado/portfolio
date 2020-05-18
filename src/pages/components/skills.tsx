@@ -19,12 +19,13 @@ const SkillRow = ({ skill }: { skill: Skill }) => {
   );
 };
 
-export const Skills = ({ skills }: { skills: Skill[] }) => {
+const Skills = ({ skills }: { skills: Skill[] }) => {
   return (
-    <div className="card experience-card right-card">
-      <h1 className="is-size-4 has-text-weight-bold"><div className="icon is-large"><FaTerminal /></div> Skills</h1>
+    <div className="card right-card">
+      <h1 className="is-size-4 has-text-weight-bold"><div className="icon is-large"><FaTerminal /></div>Skills</h1>
       <hr />
       {skills.map((skill) => (<SkillRow key={skill.title} skill={skill}></SkillRow>))}
     </div>
   );
 };
+export default Skills;

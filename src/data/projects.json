@@ -1,0 +1,16 @@
+[
+  {
+    "title": "HomePage",
+    "description": "Personal page for storing bookmarks and favorite sites",
+    "technologyUsed": ["typescript", "react", "express", "node", "postgres"],
+    "url": "http://hp.ejmercado.com",
+    "gitUrl": "https://github.com/justinemmanuelmercado/homepage"
+  },
+  {
+    "title": "Blog",
+    "description": "My Personal Blog",
+    "technologyUsed": ["gatsby", "react"],
+    "url": "https://blog.ejmercado.com",
+    "gitUrl": "https://github.com/justinemmanuelmercado/blog"
+  }
+]

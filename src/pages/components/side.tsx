@@ -35,7 +35,7 @@ const SideLink = ({ link, Icon }: { link: AboutLink, Icon: IconType }) => {
   );
 };
 
-const side = ({ about }: { about: About }) => {
+const Side = ({ about }: { about: About }) => {
   return (
     <div className="card side">
       <div className="columns flex-direction-column">
@@ -73,4 +73,4 @@ const side = ({ about }: { about: About }) => {
   );
 };
 
-export const Side = side;
+export default Side;

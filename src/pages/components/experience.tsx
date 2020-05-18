@@ -39,10 +39,10 @@ const ExperienceSection = ({ experience }: { experience: Experience }) => {
   );
 };
 
-export const Experience = ({ experiences }: { experiences: Experience[] }) => {
+const Experience = ({ experiences }: { experiences: Experience[] }) => {
   return (
-    <div className="card experience-card right-card">
-      <h1 className="is-size-4 has-text-weight-bold"><div className="icon is-large"><FaTools /></div> Experience</h1>
+    <div className="card right-card">
+      <h1 className="is-size-4 has-text-weight-bold"><div className="icon is-large"><FaTools /></div>Experience</h1>
       {experiences.map((exp) => (<div className="company-section" key={exp.company}>
           <ExperienceSection experience={exp} />
         </div>
@@ -50,3 +50,5 @@ export const Experience = ({ experiences }: { experiences: Experience[] }) => {
     </div>
   );
 };
+
+export default Experience;
