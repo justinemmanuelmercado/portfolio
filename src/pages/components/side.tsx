@@ -21,7 +21,6 @@ interface About {
   blog: AboutLink;
 }
 
-
 const SideLink = ({ link, Icon }: { link: AboutLink, Icon: IconType }) => {
   return (
     <span>

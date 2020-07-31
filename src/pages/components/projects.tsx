@@ -1,3 +1,5 @@
+/* eslint-disable import/no-dynamic-require */
+/* eslint-disable global-require */
 import React from 'react';
 import { FaLightbulb } from 'react-icons/fa';
 
@@ -7,6 +9,7 @@ interface Project {
   technologyUsed: string[];
   url: string;
   gitUrl: string;
+  gif: string;
 }
 
 const ProjectSection = ({ project }: { project: Project }) => {
@@ -14,6 +17,7 @@ const ProjectSection = ({ project }: { project: Project }) => {
     <div>
       <hr></hr>
       <div>
+        <img src={require(`../../gif/${project.gif}.gif`)}/>
         <div className="flex-row-space-between">
           <span>
             <span className="is-size-6 has-text-weight-bold">{project.title}</span>
@@ -34,7 +38,6 @@ const ProjectSection = ({ project }: { project: Project }) => {
     </div>
   );
 };
-
 
 const Projects = ({ projects }: { projects: Project[] }) => {
   return (
