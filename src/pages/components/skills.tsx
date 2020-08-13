@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaTerminal } from 'react-icons/fa';
+import { FaTools } from 'react-icons/fa';
 
 interface Skill {
   title: string,
@@ -13,7 +13,9 @@ const SkillRow = ({ skill }: { skill: Skill }) => {
         {skill.title}
       </span>
       <span className="column is-four-fifths is-size-5 has-text-weight-light">
-        {skill.skills.map((skl) => <span className="tag" key={skl}>{skl}</span>)}
+        <span className="tags">
+          {skill.skills.map((skl) => <span className="tag" key={skl}>{skl}</span>)}
+        </span>
       </span>
     </span>
   );
@@ -22,7 +24,7 @@ const SkillRow = ({ skill }: { skill: Skill }) => {
 const Skills = ({ skills }: { skills: Skill[] }) => {
   return (
     <div className="card right-card">
-      <h1 className="is-size-4 has-text-weight-bold"><div className="icon is-large"><FaTerminal /></div>Skills</h1>
+      <h1 className="is-size-4 has-text-weight-bold"><div className="icon is-large"><FaTools /></div>Skills</h1>
       <hr />
       {skills.map((skill) => (<SkillRow key={skill.title} skill={skill}></SkillRow>))}
     </div>

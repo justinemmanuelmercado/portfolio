@@ -2,6 +2,7 @@
 /* eslint-disable global-require */
 import React from 'react';
 import { FaLightbulb } from 'react-icons/fa';
+import './projects.sass';
 
 interface Project {
   title: string;
@@ -17,23 +18,38 @@ const ProjectSection = ({ project }: { project: Project }) => {
     <div>
       <hr></hr>
       <div>
-        <img src={require(`../../gif/${project.gif}.gif`)}/>
-        <div className="flex-row-space-between">
+        <div>
           <span>
             <span className="is-size-6 has-text-weight-bold">{project.title}</span>
             <span className="tags">
               {project.technologyUsed.map((tech) => <span key={tech} className="tag">{tech}</span>)}
             </span>
           </span>
-          <span>
-            <h3 className="is-size-7">{project.url}</h3>
-          </span>
         </div>
-      </div>
-      <div className="experience-description">
-        <ul className="is-size-7">
-          <li>{project.description}</li>
-        </ul>
+        <div className="experience-description">
+          <div className="columns">
+            <div className="column is-one-half">
+              <img src={require(`../../gif/${project.gif}.gif`)} />
+            </div>
+            <div className="column">
+              <ul className="is-size-7">
+                <li>{project.description}</li>
+              </ul>
+              <div className="field is-grouped button-links">
+                <span className="control">
+                  <button className="button">
+                    <a href={project.url}>Visit Page</a>
+                  </button>
+                </span>
+                <span className="control">
+                  <button className="button">
+                    <a href={project.gitUrl}>Git Link</a>
+                  </button>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -1,7 +1,7 @@
 import React from 'react';
 import './experience.sass';
 
-import { FaTools } from 'react-icons/fa';
+import { FaTerminal } from 'react-icons/fa';
 
 interface Experience {
   company: string;
@@ -19,15 +19,16 @@ const ExperienceSection = ({ experience }: { experience: Experience }) => {
         <div className="flex-row-space-between">
           <span>
             <span className="is-size-6 has-text-weight-bold">{experience.position}</span>
-            <span className="is-size-6 has-text-weight-light"> at </span>
-            <span className="is-size-6 has-text-weight-semibold">{experience.company}</span>
+            {experience.company && <><span className="is-size-6 has-text-weight-light"> at </span><span className="is-size-6 has-text-weight-semibold">{experience.company}</span></>}
+            <span className="is-size-6 has-text-weight-light"> from </span>
+            <span className="is-size-7 has-text-weight-bold">{experience.dates}</span>
             <span className="tags">
               {experience.technologyUsed.map((tech) => <span key={tech} className="tag">{tech}</span>)}
             </span>
           </span>
-          <span>
+          {/* <span>
             <h3 className="is-size-7">{experience.dates}</h3>
-          </span>
+          </span> */}
         </div>
       </div>
       <div className="experience-description">
@@ -42,7 +43,7 @@ const ExperienceSection = ({ experience }: { experience: Experience }) => {
 const Experience = ({ experiences }: { experiences: Experience[] }) => {
   return (
     <div className="card right-card">
-      <h1 className="is-size-4 has-text-weight-bold"><div className="icon is-large"><FaTools /></div>Experience</h1>
+      <h1 className="is-size-4 has-text-weight-bold"><div className="icon is-large"><FaTerminal /></div>Experience</h1>
       {experiences.map((exp) => (<div className="company-section" key={exp.company}>
           <ExperienceSection experience={exp} />
         </div>

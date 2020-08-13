@@ -1,18 +1,19 @@
 [
   {
-    "company": "Freelance",
+    "company": "",
     "position": "Freelance Software Developer",
     "dates": "May 2020 - Present",
     "technologyUsed": [
-      "Typescript"
+      "Typescript",
+      "Jest"
     ],
     "description": [
       "Completed different sections for the library @scaleleap/amazon-mws-sdk",
-      "@scaleleap/amazon-mws-sdk is a completely typed out SDK for Amazon's Marketplace Web Service"
+      "@scaleleap/amazon-mws-sdk is a completely typed out SDK for Amazon's Marketplace Web Service API"
     ]
   },
   {
-    "company": "Freelance",
+    "company": "",
     "position": "Freelance Software Developer",
     "dates": "August 2018 - May 2020",
     "technologyUsed": [
