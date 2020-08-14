@@ -8,8 +8,8 @@
       "jest"
     ],
     "description": [
-      "Completed different sections for the library @scaleleap/amazon-mws-sdk",
-      "@scaleleap/amazon-mws-sdk is a completely typed out SDK for Amazon's Marketplace Web Service API"
+      "Completed different sections for the library [@scaleleap/amazon-mws-sdk](https://github.com/ScaleLeap/amazon-mws-api-sdk)",
+      "[@scaleleap/amazon-mws-sdk](https://github.com/ScaleLeap/amazon-mws-api-sdk) is a completely typed out SDK for Amazon's Marketplace Web Service API"
     ]
   },
   {
@@ -29,7 +29,7 @@
     "description": [
       "Made multiple fullstack webapps using Typescript, React and Express/Koa",
       "Integrated the Elastic Stack for collecting logs on users' progress and activity",
-      "Used Lambda for multiple purposes, from small one-of tasks to running an Express REST API using Serverless Framework",
+      "Used Lambda for multiple purposes, ranging from small one-of tasks to running an Express REST API using Serverless Framework",
       "Integrated AWS S3 into a web application for the purpose storing images and using the images in the web app"
     ]
   },
@@ -44,7 +44,7 @@
       "mysql"
     ],
     "description": [
-      "Part of the main development team for Studylane and GlobalStudyPartners. A web application that helps connect schools with potential students wanting to study in Australia",
+      "Part of the main development team for [Studylane](https://www.studylane.com.au/home) and [GlobalStudyPartners](https://www.globalstudypartners.com/). A web application that helps connect schools with potential students wanting to study in Australia",
       "Created various parts of the REST API from search results to saving and updating data in the database",
       "Implemented filtering through lazy-loading to a table previously being loaded all at once and only filtering client-side",
       "Implemented JWT authentication to a new admin page instead of the previous session based authentication"

@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactMarkdown from 'react-markdown';
 import './experience.sass';
 
 import { FaTerminal } from 'react-icons/fa';
@@ -23,17 +24,20 @@ const ExperienceSection = ({ experience }: { experience: Experience }) => {
             <span className="is-size-6 has-text-weight-light"> from </span>
             <span className="is-size-7 has-text-weight-bold">{experience.dates}</span>
             <span className="tags">
-              {experience.technologyUsed.map((tech) => <span key={tech} className="tag">{tech}</span>)}
+              {experience.technologyUsed.map((tech) => <span key={tech} className="tag">
+                {tech}
+              </span>)}
             </span>
           </span>
-          {/* <span>
-            <h3 className="is-size-7">{experience.dates}</h3>
-          </span> */}
         </div>
       </div>
       <div className="experience-description">
         <ul className="is-size-7">
-          {experience.description.map((desc) => <li key={desc}>{desc}</li>)}
+          {experience.description.map((desc) => <li key={desc}>
+            <div>
+              <ReactMarkdown allowedTypes={['text', 'link', 'paragraph']}>{desc}</ReactMarkdown>
+            </div>
+          </li>)}
         </ul>
       </div>
     </div>
@@ -45,8 +49,8 @@ const Experience = ({ experiences }: { experiences: Experience[] }) => {
     <div className="card right-card">
       <h1 className="is-size-4 has-text-weight-bold"><div className="icon is-large"><FaTerminal /></div>Experience</h1>
       {experiences.map((exp) => (<div className="company-section" key={exp.dates}>
-          <ExperienceSection experience={exp} />
-        </div>
+        <ExperienceSection experience={exp} />
+      </div>
       ))}
     </div>
   );

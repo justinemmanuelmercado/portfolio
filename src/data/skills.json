@@ -2,6 +2,7 @@
   {
     "title": " 💾 Backend",
     "skills": [
+      "NodeJs",
       "Express",
       "Koa"
     ]
