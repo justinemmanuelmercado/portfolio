@@ -4,8 +4,8 @@
     "position": "Freelance Software Developer",
     "dates": "May 2020 - Present",
     "technologyUsed": [
-      "Typescript",
-      "Jest"
+      "typescript",
+      "jest"
     ],
     "description": [
       "Completed different sections for the library @scaleleap/amazon-mws-sdk",
@@ -17,14 +17,14 @@
     "position": "Freelance Software Developer",
     "dates": "August 2018 - May 2020",
     "technologyUsed": [
-      "React",
-      "Node",
-      "Express",
-      "Koa",
-      "Typescript",
-      "AWS",
-      "Elastic Stack",
-      "Postgres"
+      "react",
+      "node",
+      "express",
+      "koa",
+      "typescript",
+      "aws",
+      "elastic stack",
+      "postgres"
     ],
     "description": [
       "Made multiple fullstack webapps using Typescript, React and Express/Koa",
@@ -38,10 +38,10 @@
     "position": "Software Engineer",
     "dates": "August 2017 - October 2018",
     "technologyUsed": [
-      "AngularJS",
-      "Node",
-      "Express",
-      "MySQL"
+      "angularjs",
+      "node",
+      "express",
+      "mysql"
     ],
     "description": [
       "Part of the main development team for Studylane and GlobalStudyPartners. A web application that helps connect schools with potential students wanting to study in Australia",
@@ -55,9 +55,9 @@
     "position": "Fullstack Web Developer",
     "dates": "January 2016 - March 2017",
     "technologyUsed": [
-      "PHP",
-      "jQuery",
-      "Wordpress"
+      "php",
+      "jquery",
+      "wordpress"
     ],
     "description": [
       "Worked on various project frontends using jQuery, Bootstrap and Wordpress",

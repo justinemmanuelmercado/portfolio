@@ -2,11 +2,12 @@
 /* eslint-disable global-require */
 import React from 'react';
 import { FaLightbulb } from 'react-icons/fa';
-import './projects.sass';
+import Gif from './gif';
+import './gif.sass';
 
 interface Project {
   title: string;
-  description: string;
+  description: string[];
   technologyUsed: string[];
   url: string;
   gitUrl: string;
@@ -26,30 +27,32 @@ const ProjectSection = ({ project }: { project: Project }) => {
             </span>
           </span>
         </div>
-        <div className="experience-description">
+        <div className="mt-4 is-fullwidth">
           <div className="columns">
-            <div className="column is-one-half">
-              <img src={require(`../../gif/${project.gif}.gif`)} />
+            <div className="column is-one-third">
+              <Gif
+                gif={require(`../../projects/${project.gif}.gif`)}
+                still={require(`../../projects/${project.gif}.png`)}/>
             </div>
-            <div className="column">
+            <div className="column is-two-thirds">
               <ul className="is-size-7">
-                <li>{project.description}</li>
+                {project.description.map((desc) => <li key={desc}>{desc}</li>)}
               </ul>
-              <div className="field is-grouped button-links">
-                <span className="control">
-                  <button className="button">
-                    <a href={project.url}>Visit Page</a>
-                  </button>
-                </span>
-                <span className="control">
-                  <button className="button">
-                    <a href={project.gitUrl}>Git Link</a>
-                  </button>
-                </span>
-              </div>
             </div>
           </div>
         </div>
+      </div>
+      <div className="field is-grouped mt-4">
+        {project.url && <span className="control">
+          <button className="button">
+            <a href={project.url}>See it in action</a>
+          </button>
+        </span>}
+        {project.gitUrl && <span className="control">
+          <button className="button">
+            <a href={project.gitUrl}>Open git page</a>
+          </button>
+        </span>}
       </div>
     </div>
   );

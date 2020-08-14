@@ -44,7 +44,7 @@ const Experience = ({ experiences }: { experiences: Experience[] }) => {
   return (
     <div className="card right-card">
       <h1 className="is-size-4 has-text-weight-bold"><div className="icon is-large"><FaTerminal /></div>Experience</h1>
-      {experiences.map((exp) => (<div className="company-section" key={exp.company}>
+      {experiences.map((exp) => (<div className="company-section" key={exp.dates}>
           <ExperienceSection experience={exp} />
         </div>
       ))}
