@@ -62,7 +62,7 @@ const Projects = ({ projects }: { projects: Project[] }) => {
   return (
     <div className="card right-card">
       <h1 className="is-size-4 has-text-weight-bold"><div className="icon is-large"><FaLightbulb /></div>Personal Projects</h1>
-      {projects.map((prj) => <ProjectSection key={prj.title} project={prj} />)}
+      {projects && projects.map((prj) => <ProjectSection key={prj.title} project={prj} />)}
     </div>
   );
 };
