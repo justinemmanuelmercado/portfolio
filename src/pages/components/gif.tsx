@@ -10,11 +10,11 @@ const Gif = ({ gif, still }: {gif: string, still: string}) => {
       {!playing && <div className="play-pause" onClick={() => setPlaying(true)}>
         <FaPlayCircle size="5rem"/>
       </div>}
-      {loading && <div className="play-pause" onClick={() => setPlaying(true)}>
-        <FaSpinner size="5rem"/>
+      {loading && playing && <div className="play-pause" onClick={() => setPlaying(true)}>
+        <FaSpinner className="fa-spin" size="5rem"/>
       </div>}
-      <img className={`gif-still ${playing ? 'playing' : ''}`}loading="eager" src={still}/>
-      <link rel="preload" href={gif} as="image"/>
+      <img className={`gif-still ${playing ? 'playing' : ''}`} loading="eager" src={still}/>
+      {/* <link rel="preload" href={gif} as="image"/> */}
       <img onLoad={() => setLoading(false)} className={'gif-gif'} onClick={() => setPlaying(false)} loading="lazy" src={playing ? gif : still} />
     </div>
   );

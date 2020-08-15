@@ -9,10 +9,10 @@ interface Skill {
 const SkillRow = ({ skill }: { skill: Skill }) => {
   return (
     <span className="flex-row">
-      <span className="column is-one-fifth is-size-6 has-text-weight-bold flex-justify-end">
+      <span className="column is-one-fifth has-text-weight-bold flex-justify-end">
         {skill.title}
       </span>
-      <span className="column is-four-fifths is-size-5 has-text-weight-light">
+      <span className="column is-four-fifths has-text-weight-light">
         <span className="tags">
           {skill.skills.map((skl) => <span className="tag" key={skl}>{skl}</span>)}
         </span>
