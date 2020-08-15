@@ -31,8 +31,8 @@ const ProjectSection = ({ project }: { project: Project }) => {
           <div className="columns">
             <div className="column is-one-third">
               <Gif
-                gif={require(`../../projects/${project.gif}.gif`)}
-                still={require(`../../projects/${project.gif}.png`)}/>
+                gif={require(`../../data/projects/${project.gif}.gif`)}
+                still={require(`../../data/projects/${project.gif}.png`)}/>
             </div>
             <div className="column is-two-thirds">
               <ul className="is-size-7">
