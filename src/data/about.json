@@ -10,15 +10,15 @@
     "url": "mailto:ej@ejmercado.com"
   },
   "linkedin": {
-    "display": "ejmercado",
+    "display": "LinkedIn",
     "url": "https://www.linkedin.com/in/ejmercado/"
   },
   "github": {
-    "display": "justinemmanuelmercado",
+    "display": "Github",
     "url": "https://github.com/justinemmanuelmercado"
   },
   "blog": {
-    "display": "blog.ejmercado.com",
+    "display": "Blog",
     "url": "https://blog.ejmercado.com"
   }
 }

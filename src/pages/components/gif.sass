@@ -1,15 +1,17 @@
 .gif-holder
-  // box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02)
-  border: #b4b4b4 solid 1px
   position: relative
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: center
+  img
+    max-width: 310px
+    max-height: 275px
+    border: #b4b4b4 solid 1px
   .gif-gif
     cursor: pointer
-  .gif-still
-    position: absolute
-    top: 0
-    left: 0
-    &.playing
-      display: none
+  .playing
+    display: none
   .play-pause
     height: 100%
     width: 100%
@@ -21,7 +23,7 @@
     align-items: center
     cursor: pointer
     .fa-spin 
-      animation: fa-spin 2s infinite linear
+      animation: fa-spin 1s infinite linear
 
 @keyframes fa-spin
   0%

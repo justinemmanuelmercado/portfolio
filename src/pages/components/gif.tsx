@@ -7,15 +7,21 @@ const Gif = ({ gif, still }: {gif: string, still: string}) => {
 
   return (
     <div className="gif-holder">
-      {!playing && <div className="play-pause" onClick={() => setPlaying(true)}>
+      {!playing && <div className="play-pause" onClick={() => {
+        setLoading(true);
+        setPlaying(true);
+      }}>
         <FaPlayCircle size="5rem"/>
       </div>}
-      {loading && playing && <div className="play-pause" onClick={() => setPlaying(true)}>
-        <FaSpinner className="fa-spin" size="5rem"/>
+      {loading && <div className="play-pause" onClick={() => setPlaying(true)}>
+        <FaSpinner className="fa-spin" size="2rem"/>
       </div>}
-      <img className={`gif-still ${playing ? 'playing' : ''}`} loading="eager" src={still}/>
-      {/* <link rel="preload" href={gif} as="image"/> */}
-      <img onLoad={() => setLoading(false)} className={'gif-gif'} onClick={() => setPlaying(false)} loading="lazy" src={playing ? gif : still} />
+      <img
+        onLoad={() => setLoading(false)}
+        className={'gif-gif'}
+        onClick={() => setPlaying(false)}
+        loading="lazy"
+        src={playing ? gif : still} />
     </div>
   );
 };

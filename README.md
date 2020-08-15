@@ -12,6 +12,14 @@ All of the pictures and data is in json format and can be found in the [/src/dat
 
 Favicon is in the [/static](/static) folder
 
+### Image sizes
+
+**Display picture**
+Square bigger than 200px x 200px
+
+**Stills and gifs for projects**
+Locked at 375px x 210px
+
 ## Developing
 
 Built using gatsby and typescript

@@ -28,7 +28,7 @@ const ProjectSection = ({ project }: { project: Project }) => {
           </span>
         </div>
         <div className="mt-4 is-fullwidth">
-          <div className="columns">
+          <div className="columns is-centered">
             <div className="column is-one-third">
               <Gif
                 gif={require(`../../data/projects/${project.gif}.gif`)}
