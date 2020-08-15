@@ -17,6 +17,7 @@ const main = () => (
     <Helmet>
       <meta charSet="utf-8" />
       <title>{about.pageTitle}</title>
+      <description>{about.description}</description>
     </Helmet>
     <section className="column is-one-quarter">
       <Side about={about}></Side>

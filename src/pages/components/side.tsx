@@ -39,7 +39,7 @@ const Side = ({ about }: { about: About }) => {
     <div className="card side">
       <div className="columns flex-direction-column">
         <div className="column center-items-through-flex ">
-          <img src={require('../../data/me.jpg')} alt="Display Picture is-128x128" className="display-picture"></img>
+          <img src={require('../../data/me.jpg')} className="display-picture" alt={`${about.firstName} ${about.lastName}`}></img>
         </div>
         <span className="column center-items-through-flex flex-direction-column">
           <h1 className="is-size-4 has-text-centered">{about.firstName} <span className="has-text-weight-bold">{about.lastName}</span></h1>

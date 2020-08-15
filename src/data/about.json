@@ -4,6 +4,7 @@
   "lastName": "Mercado",
   "address": "Baguio, Philippines",
   "title": "Fullstack Web Developer",
+  "description": "EJ Mercado's personal portfolio site",
   "email": {
     "display": "ej@ejmercado.com",
     "url": "mailto:ej@ejmercado.com"
