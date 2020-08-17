@@ -1,36 +1,87 @@
 [
   {
-    "title": " 💾 Backend",
+    "title": "Programming",
     "skills": [
-      "NodeJs",
-      "Express",
-      "Koa"
+      {
+        "name": "Typescript",
+        "img": "ts.svg",
+        "exp": "2 years"
+      },
+      {
+        "name": "Javascript",
+        "img": "js.svg",
+        "exp": "4 years"
+      },
+      {
+        "name": "NodeJS",
+        "img": "node.svg",
+        "exp": "3 years"
+      }
     ]
   },
   {
-    "title": " 🖥️ Frontend",
+    "title": "Frontend",
     "skills": [
-      "React",
-      "AngularJS",
-      "SASS",
-      "jQuery"
+      {
+        "name": "React",
+        "img": "react.svg",
+        "exp": "2 years"
+      },
+      {
+        "name": "AngularJS",
+        "img": "angular.svg",
+        "exp": "1.5 years"
+      },
+      {
+        "name": "SASS",
+        "img": "sass.svg",
+        "exp": "<1 year"
+      },
+      {
+        "name": "jQuery",
+        "img": "jq.svg",
+        "exp": "1 year"
+      }
     ]
   },
   {
-    "title": " ⌨️ Programming",
+    "title": "Backend",
     "skills": [
-      "Typescript",
-      "JavaScript",
-      "Node"
+      {
+        "name": "Express",
+        "img": "express.svg",
+        "exp": "3 years"
+      },
+      {
+        "name": "Koa",
+        "img": "koa.svg",
+        "exp": "<1 year"
+      }
     ]
   },
   {
-    "title": " 🧱 Misc",
+    "title": "Misc",
     "skills": [
-      "Linux",
-      "AWS",
-      "Postgres",
-      "Mysql"
+      {
+        "name": "Linux",
+        "img": "linux.svg",
+        "exp": "4 years"
+      },
+      {
+        "name": "Postgres",
+        "img": "postgres.svg",
+        "exp": "1 year"
+      },
+      {
+        "name": "AWS",
+        "img": "aws.svg",
+        "exp": "1 year"
+      },
+      {
+        "name": "MySQL",
+        "img": "mysql.svg",
+        "exp": "2 years"
+      }
     ]
   }
 ]

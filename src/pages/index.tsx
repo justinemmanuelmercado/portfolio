@@ -13,7 +13,7 @@ import Skills from './components/skills';
 import Projects from './components/projects';
 
 const main = () => (
-  <div className="container columns is-fluid">
+  <div className="container is-fullhd columns">
     <Helmet>
       <meta charSet="utf-8" />
       <title>{about.pageTitle}</title>
@@ -23,7 +23,7 @@ const main = () => (
     <section className="column is-one-quarter">
       <Side about={about}></Side>
     </section>
-    <section className="column is-three-quarters">
+    <section className="column">
       <Skills skills={skills}></Skills>
       <Experience experiences={experience} />
       <Projects projects={projects} />
