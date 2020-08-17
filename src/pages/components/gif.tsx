@@ -3,7 +3,7 @@ import { FaPlayCircle, FaSpinner } from 'react-icons/fa';
 
 const Gif = ({ gif, still }: {gif: string, still: string}) => {
   const [playing, setPlaying] = useState(false);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   return (
     <div className="gif-holder">
