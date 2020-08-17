@@ -20,7 +20,7 @@ const Gif = ({ gif, still }: {gif: string, still: string}) => {
         onLoad={() => setLoading(false)}
         className={'gif-gif'}
         onClick={() => setPlaying(false)}
-        loading="lazy"
+        loading="eager"
         src={playing ? gif : still} />
     </div>
   );
