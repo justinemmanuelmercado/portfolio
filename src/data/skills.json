@@ -8,14 +8,14 @@
         "exp": "2 years"
       },
       {
-        "name": "Javascript",
-        "img": "js.svg",
-        "exp": "4 years"
-      },
-      {
         "name": "NodeJS",
         "img": "node.svg",
         "exp": "3 years"
+      },
+      {
+        "name": "Javascript",
+        "img": "js.svg",
+        "exp": "4 years"
       }
     ]
   },

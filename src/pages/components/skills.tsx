@@ -25,7 +25,7 @@ const SkillRow = ({ skill }: { skill: Skills }) => {
         </header>
         <div className="card-content">
           <div className="columns is-centered is-vcentered is-desktop is-full is-mobile is-multiline">
-            {skill.skills.map((skl) => <div className="column is-mobile is-desktop is-full-desktop is-half-mobile columns mb-1 is-centered is-vcentered is-multiline" key={skl.name}>
+            {skill.skills.map((skl) => <div className="column is-mobile is-desktop is-half-mobile columns mb-1 is-centered is-vcentered is-multiline" key={skl.name}>
               <div className="column is-mobile columns is-centered is-vcentered mb-1">
                 <span className="column is-narrow">
                   <figure className="image skill-image">
