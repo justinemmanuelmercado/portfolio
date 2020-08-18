@@ -17,7 +17,9 @@ const main = () => (
     <Helmet>
       <meta charSet="utf-8" />
       <title>{about.pageTitle}</title>
-      <meta id="meta-description" name="description" content={about.description} />
+      {about.description.map((desc) => {
+        return <meta key={desc} name="description" content={desc} />;
+      })}
       <meta id="og-title" property="og:title" content={about.title} />
     </Helmet>
     <section className="column is-one-quarter">
